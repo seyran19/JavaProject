@@ -1,3 +1,5 @@
+package edu.java.studentorder.domain;
+
 public class StudentOrder
 {
     String hFirstName;
