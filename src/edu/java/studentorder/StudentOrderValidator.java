@@ -33,6 +33,7 @@ public class StudentOrderValidator
         StudentOrder[] so = readStudentOrders();
         for (StudentOrder studentOrder : so) {
             checkOneOrder(studentOrder);
+            System.out.println();
         }
     }
 
@@ -51,7 +52,7 @@ public class StudentOrderValidator
         for(int i = 0; i < soArray.length; i ++) {
             soArray[i] = SaveStudentOrder.buildStudentOrder(i);
         }
-        return null;
+        return soArray;
     }
 
     public AnswerCityRegister checkCityRegister(StudentOrder so)
