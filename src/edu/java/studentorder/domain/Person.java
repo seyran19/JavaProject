@@ -6,7 +6,14 @@ public abstract class Person
     private String surName;
     private String givenName;
     private String patronymicName;
-    private LocalDate DataOfBirth;
+    private LocalDate dataOfBirth;
+
+    public Person(String surName, LocalDate dataOfBirth, String patronymicName, String givenName) {
+        this.surName = surName;
+        this.dataOfBirth = dataOfBirth;
+        this.patronymicName = patronymicName;
+        this.givenName = givenName;
+    }
 
     public String getSurName() {
         return surName;
@@ -33,11 +40,11 @@ public abstract class Person
     }
 
     public LocalDate getDataOfBirth() {
-        return DataOfBirth;
+        return dataOfBirth;
     }
 
     public void setDataOfBirth(LocalDate dataOfBirth) {
-        DataOfBirth = dataOfBirth;
+        this.dataOfBirth = dataOfBirth;
     }
 
     public Address getAddress() {

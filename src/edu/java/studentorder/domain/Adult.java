@@ -9,6 +9,10 @@ public class Adult extends Person
     private LocalDate issueDate;
     private String issueDepartment;
 
+    public Adult(String surName, LocalDate dataOfBirth, String patronymicName, String givenName) {
+        super(surName, dataOfBirth, patronymicName, givenName);
+    }
+
     public String getUniversity() {
         return university;
     }
