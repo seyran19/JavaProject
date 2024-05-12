@@ -1,6 +1,6 @@
 package edu.java.studentorder.domain;
 
-public class StudentOrder
+public class StudentOrder // класс заявление студента
 {
     private long studentOrderId;
     private Adult husband;
