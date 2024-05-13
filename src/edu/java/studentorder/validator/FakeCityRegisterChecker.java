@@ -1,6 +1,7 @@
 package edu.java.studentorder.validator;
 
 import edu.java.studentorder.domain.Adult;
+import edu.java.studentorder.domain.Child;
 import edu.java.studentorder.domain.CityRegisterCheckerResponse;
 import edu.java.studentorder.domain.Person;
 import edu.java.studentorder.exeption.CityRegisterException;
@@ -33,9 +34,16 @@ public class FakeCityRegisterChecker implements CityRegisterChecker
             }
 
             if (t.getPassportSeria().equals(ERROR_1) || t.getPassportSeria().equals(ERROR_2)) {
-                res.setExisting(false);
+                CityRegisterException ex = new CityRegisterException("Fake Error " + t.getPassportSeria());
+                throw ex;
             }
         }
+
+        if (person instanceof Child) {
+            res.setExisting(true);
+            res.setTemporal(true);
+        }
+        System.out.println(res);
         return res;
     }
 }

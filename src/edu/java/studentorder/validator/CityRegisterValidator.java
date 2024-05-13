@@ -24,7 +24,7 @@ public class CityRegisterValidator
         }
         catch (CityRegisterException ex)
         {
-            ex.printStackTrace();
+            ex.printStackTrace(System.out);
         }
 
         AnswerCityRegister ans = new AnswerCityRegister();
