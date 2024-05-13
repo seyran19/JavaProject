@@ -39,16 +39,16 @@ public class StudentOrderValidator
 
     public void checkOneOrder(StudentOrder so){
         AnswerCityRegister cityAnswer = checkCityRegister(so);
-        AnswerStudent studentAnswer = checkStudent(so);
-        AnswerChildren checkChild = checkChildren(so);
-        AnswerWedding checkWedding = checkWedding(so);
-        sendMail(so);
+        //AnswerStudent studentAnswer = checkStudent(so);
+        //AnswerChildren checkChild = checkChildren(so);
+        //AnswerWedding checkWedding = checkWedding(so);
+        //sendMail(so);
     }
 
 
     public StudentOrder[] readStudentOrders()
     {
-        StudentOrder[] soArray = new StudentOrder[3];
+        StudentOrder[] soArray = new StudentOrder[1];
         for(int i = 0; i < soArray.length; i ++) {
             soArray[i] = SaveStudentOrder.buildStudentOrder(i);
         }

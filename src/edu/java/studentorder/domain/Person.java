@@ -7,6 +7,7 @@ public abstract class Person
     private String givenName;
     private String patronymicName;
     private LocalDate dataOfBirth;
+    private Address address;
 
     public Person(String surName, LocalDate dataOfBirth, String patronymicName, String givenName) {
         this.surName = surName;
@@ -55,5 +56,5 @@ public abstract class Person
         this.address = address;
     }
 
-    private Address address;
+
 }

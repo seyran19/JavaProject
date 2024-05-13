@@ -10,6 +10,7 @@ public class Adult extends Person
     private String issueDepartment;
     private String university;
     private String universityId;
+    private String studentId;
 
     public Adult(String surName, LocalDate dataOfBirth, String patronymicName, String givenName) {
         super(surName, dataOfBirth, patronymicName, givenName);
@@ -61,5 +62,13 @@ public class Adult extends Person
 
     public void setIssueDepartment(String issueDepartment) {
         this.issueDepartment = issueDepartment;
+    }
+
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
     }
 }

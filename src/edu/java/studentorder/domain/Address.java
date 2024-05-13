@@ -6,6 +6,15 @@ public class Address
     private String street;
     private String building;
     private String extension;
+    private String apartment;
+
+    public Address(String postCode, String street, String building, String extension, String apartment) {
+        this.postCode = postCode;
+        this.street = street;
+        this.building = building;
+        this.extension = extension;
+        this.apartment = apartment;
+    }
 
     public String getPostCode() {
         return postCode;
@@ -14,8 +23,6 @@ public class Address
     public void setPostCode(String postCode) {
         this.postCode = postCode;
     }
-
-    private String apartment;
 
     public String getStreet() {
         return street;
