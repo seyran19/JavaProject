@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StudentOrder // класс заявление студента
+public class StudentOrder // класс шаблон заявление студента
 {
     private long studentOrderId;
     private Adult husband;
