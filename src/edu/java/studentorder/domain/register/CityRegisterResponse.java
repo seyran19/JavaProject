@@ -1,6 +1,6 @@
-package edu.java.studentorder.domain;
+package edu.java.studentorder.domain.register;
 
-public class CityRegisterCheckerResponse // информация о регистрации
+public class CityRegisterResponse // информация о регистрации
 {
     private boolean existing;
     private Boolean temporal;
